@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form</title>
+    <style>
+        form {
+            width: 50%;
+            margin: auto;
+        }
+        #submit, #reset {
+            margin-top: 16px;
+            margin-right: 16px;
+            padding: 8px;
+            background-color: rgb(50, 182, 81);
+            border: none;
+            color: whitesmoke;
+        }
+        input {
+            padding: 6px;
+            border: 1px solid slategray;
+            border-radius: 8px;
+        }
+
+    </style>
+</head>
+<body>
+    <form>
+    <h2 style="text-align: center;">Registration Form</h2>
+        <fieldset>
+            <legend>Personal Information</legend>
+        <label for="fullname">Full Name:</label>
+        <input type="text" id="fullname" name="fullname"><br><br>
+
+        <label for="occupation">Occupation</label>
+        <input list="occupation-list" type="text" id="occupation" name="occupation"><br>
+        <datalist id="occupation-list">
+            <option value="Student">
+            <option value="Professional">
+            <option value="Others">
+        </datalist>
+        <br>
+        <p style="display: inline;">Gender: </p>
+        <input type="radio" id="male" name="gender" value="Male">
+        <label for="male">Male</label>
+        <input type="radio" id="female" name="gender" value="Female">
+        <label for="female">Female</label>
+        <input type="radio" id="others" name="gender" value="Others">
+        <label for="others">Others</label>
+
+        <label for="dob" style="margin-left: 24px;">Date of Birth</label>        
+        <input type="date" id="dob" name="dob">
+        </fieldset>
+        <br>
+
+        <fieldset>
+            <legend>Contact Information</legend>
+            <label for="phone">Phone</label>
+            <input type="tel" id="phone" name="phone">
+            <label for="email" style="margin-left: 24px;">E-mail</label>
+            <input type="email" id="email" name="email">
+            <br><br>
+            <label for="address">Address</label><br>
+            <textarea id="address" name="address" rows="4" cols="25"></textarea>
+        </fieldset>
+        <br>
+        
+        <fieldset>
+            <legend>Educational Details</legend>
+            <h4 style="margin-bottom: 0;">High-School</h4><br>
+            <label for="marks-school">Marks Obtained</label>
+            <input type="number" id="marks-school" name="marks-school">
+            <label for="total-marks1" style="margin-left: 24px;">Total Marks</label>
+            <input type="number" id="total-marks1" name="total-marks1">
+
+            <h4 style="margin-bottom: 0;">College</h4><br>
+            <label for="marks-college">Marks Obtained</label>
+            <input type="number" id="marks-college" name="marks-college">
+            <label for="total-marks2" style="margin-left: 24px;">Total Marks</label>
+            <input type="number" id="total-marks2" name="total-marks2">
+        </fieldset>
+
+        <button id="submit" type="submit">Submit</button>
+        <button id="reset" type="reset">Reset</button>
+    </form>
+</body>
+</html>
