@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>RWD Media Queries</title>
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+        body {
+            margin: 0;
+        }
+        .header {
+            padding: 16px;
+            background-color: violet;
+        }
+        [class*=col-] {
+            float: left;
+            width: 100%;
+            padding: 16px;
+        }
+        .row::after {
+            content: "";
+            clear: both;
+            display: table;
+        }
+        .menu ul {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+        }
+        .menu ul li {
+            padding: 8px;
+            background-color: aquamarine;
+            margin-bottom: 8px;
+            font-size: large;
+            font-weight: 500;
+        }
+        .aside {
+            text-align: center;
+            background-color: aquamarine;
+            margin-top: 8px;
+            padding: 16px;
+        }
+        .aside p {
+            font-size: 18px;
+        }
+        .footer {
+            padding: 16px;
+            background-color: aquamarine;
+            text-align: center;
+            margin-top: 8px;
+        }
+        .footer h2,h4 {
+            margin: 0;
+        }
+        @media only screen and (min-width: 600px) {
+            /* For Tablets */
+            .col-s-1 {width: 8.33%;}
+            .col-s-2 {width: 16.66%;}
+            .col-s-3 {width: 25%;}
+  .col-s-4 {width: 33.33%;}
+  .col-s-5 {width: 41.66%;}
+  .col-s-6 {width: 50%;}
+  .col-s-7 {width: 58.33%;}
+  .col-s-8 {width: 66.66%;}
+  .col-s-9 {width: 75%;}
+  .col-s-10 {width: 83.33%;}
+  .col-s-11 {width: 91.66%;}
+  .col-s-12 {width: 100%;}
+        }
+
+        @media only screen and (min-width: 768px) {
+            /* For Desktop */
+            .col-1 {
+                width: 8.33%;
+            }
+            .col-2 {width: 16.66%;}
+            .col-3 {width: 25%;}
+  .col-4 {width: 33.33%;}
+  .col-5 {width: 41.66%;}
+  .col-6 {width: 50%;}
+  .col-7 {width: 58.33%;}
+  .col-8 {width: 66.66%;}
+  .col-9 {width: 75%;}
+  .col-10 {width: 83.33%;}
+  .col-11 {width: 91.66%;}
+  .col-12 {width: 100%;}
+        }
+
+    </style>
+</head>
+<body>
+    <!-- Header -->
+    <div class="header">
+        <h1>The Explorer</h1>
+    </div>
+
+    <div class="row">
+
+    <!-- Menu bar -->
+    <div class="col-s-3 col-3 menu">
+        <ul>
+            <li>Home</li>
+            <li>Blogs</li>
+            <li>Services</li>
+            <li>About us</li>
+        </ul>
+    </div>
+
+    <!-- Main -->
+    <div class="col-s-9 col-6 main">
+        <h2>What is the significance of the Mona Lisa painting?</h2>
+        <p style="font-size: 18px;">
+            The Mona Lisa painting, created by the renowned Italian artist Leonardo da Vinci during the Renaissance period, holds immense artistic and historical significance. The painting is famous for its enigmatic smile, intricate details, and masterful use of chiaroscuro, a technique of shading that creates a three-dimensional effect. Its subject, believed to be Lisa Gherardini, the wife of a Florentine merchant, adds to its allure. The Mona Lisa's artistic excellence and the mystery surrounding the identity of the subject have made it one of the most famous and iconic artworks in the world. It has inspired countless artists, scholars, and art enthusiasts for centuries, leaving an indelible mark on the art world and cementing Leonardo da Vinci's legacy as one of the greatest artists in history.</p>
+    </div>
+    <!-- Aside -->
+    <div class="col-s-12 col-3 aside">
+        <h2>What?</h2>
+        <p>Paris is the capital of France</p>
+        <h2>Where?</h2>
+        <p>Great Barrier Reef located is located in Australia</p>
+        <h2>How</h2>
+        <p>To tie a shoe make a loop with one lace, wrap the other lace around it, and pull it through the hole to create a knot.</p>
+    </div>
+</div>
+
+    <div class="footer">
+        <h3>Follow us on</h3>
+        <h4>Facebook  |  Twitter  |  YouTube</h4>
+    </div>
+
+</body>
+</html>
