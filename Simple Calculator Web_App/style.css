@@ -1,0 +1,66 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;0,700;1,400&family=Roboto:wght@400;700&family=Ubuntu:wght@700&family=Varela+Round&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: linear-gradient(45deg, #0a0a0a, #3a4452);
+}
+
+.container {
+    border: 1px solid gray;
+    padding: 20px;
+    border-radius: 5px;
+    background: transparent;
+    box-shadow: 0 3px 15px rgba(113, 115, 119, 0.5);
+}
+
+input {
+    width: 320px;
+    padding: 14px 12px;
+    margin-bottom: 10px;
+    border: none;
+    outline: none;
+    background: transparent;
+    box-shadow: 0 3px 10px rgba(113, 115, 119, 0.5);
+    text-align: end;
+    cursor: pointer;
+    font-size: 22px;
+    color: #fff;
+}
+
+input::placeholder {
+    color: #fff;
+}
+button {
+    width: 60px;
+    height: 60px;
+    border: none;
+    background: transparent;
+    color: #fff;
+    box-shadow: -5px -5px 10px rgba(255,255,255,.2);
+    border-radius: 50%;
+    margin: 8px;
+    font-size: 20px;
+    cursor: pointer;
+}
+
+.equal-btn {
+    background: rgb(230, 161, 1);
+    font-weight: 500;
+}
+
+.operator {
+    color: rgb(230, 161, 1);
+    font-weight: 500;
+}
+

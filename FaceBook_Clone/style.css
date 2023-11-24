@@ -1,0 +1,120 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'poppins', sans-serif;
+}
+body {
+    background-color: #efefef;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center; 
+    background-color: #1876f2;
+    padding: 5px 5%;
+    position: sticky;
+    top: 0;
+    z-index: 100;
+}
+.logo {
+    width: 160px;
+    margin-right: 45px;
+}
+.nav-left {
+    display: flex;
+    align-items: center;
+}
+.nav-left ul li {  
+    display: inline-block;
+    list-style-type: none;
+}
+.nav-left ul li img {
+    width: 28px;
+    margin: 0 15px;
+}
+
+/* -----------RIGHT-NAV------------ */
+.nav-right {
+    display: flex;
+    align-items: center;
+}
+.nav-user-icon {
+    margin-left: 40px;
+}
+.nav-user-icon img {
+    width: 40px;
+    border-radius: 50%;
+    cursor: pointer;
+}
+.search-box {
+    background-color: #efefef;
+    width: 350px;
+    border-radius: 20px;
+    display: flex;
+    align-items: center;
+    padding: 0 15px;
+}
+.search-box img  {
+    width: 18px;
+}
+.search-box input {
+    width: 100%;
+    background-color: transparent;
+    border: none;
+    outline: none;
+    padding: 10px;
+}
+.online {
+    position: relative;
+}
+.online::after {
+    position: absolute;
+    top: 0;
+    right: 0;
+    content: '';
+    width: 7px;
+    height: 7px;
+    border-radius: 50%;
+    border: 2px solid #fff;
+    background-color: #41db51;
+}
+
+/* ---------------CONTAINER------------------ */
+.container {
+    background-color: #41db51;
+    display: flex;
+    justify-content: space-between;
+    padding: 13px 5%;
+    /* width: 100vw;
+    height: 100vh; */
+}
+.left-sidebar {
+    background: #cbdffa;
+    flex-basis: 25%;
+    position: sticky;
+    top: 70px;
+    align-self: flex-start;
+    /* height: 100vh; */
+}
+.right-sidebar {
+    background: #cbdffa;
+    flex-basis: 25%;
+    position: sticky;
+    top: 70px;
+    align-self: flex-start; /*is it req.?*/
+    /* height: 100vh; */
+}
+.main-content {
+    flex-basis: 47%;
+    /* background-color: aquamarine; */
+}
+
+/* -----------------left-sidebar contents properties------------------ */
+.imp-links {
+    display: flex;
+    flex-direction: column;
+}
+.imp-links a {
+    display: flex;
+}
