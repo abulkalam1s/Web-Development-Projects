@@ -15,11 +15,12 @@ let buttonArr = Array.from(buttons)
 buttonArr.forEach(button => {
     button.addEventListener('click', (e) => {
         if (e.target.innerHTML == '=') {
+            const expression = string
             string = eval(string)
-            input.value = string
+            input.value = expression + " = " + string
         }
         // Above if code means jab bhi hamara '=' button click hoga to 'string' mathematically evaluate hoga using eval()
-        // & the input box will store this evaluated value('string')
+        // & the input box will store this evaluated value('string') after the string expression
         
         else if (e.target.innerHTML == 'AC') {
             string = ""
@@ -34,9 +35,9 @@ buttonArr.forEach(button => {
         // When 'DEL' button is clicked the last element should be removed. Therefore the string is set from its substring from 0 to string.length-1.
 
         else {
-            string += e.target.innerHTML;
+            string += e.target.innerHTML + " ";
             input.value = string
         }
-        // When numbers button or other operators buttons is clicked it will simply add it to the 'string'
+        // When numbers button or other operators buttons is clicked it will simply add it to the 'string' with a space " ".
     })
 })
